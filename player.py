@@ -1,19 +1,22 @@
+
 class player:
-    def play(self):
-        print("the player is playing cricket.")
+     def play(self):
+         print("the player is playing cricket.")
 
-class batman(player):
-    def play(self):
-        print("the batman is batting.") 
 
-class bowler(player):
-    def play(self):
-        print("the bowler is bowling.")
-# create objects of both batman and bowler classes and call the play() method for each object.
-batsman = btsman()
-bowler = bowler()
+class Batsman(player):
+      def play(self):
+          print("The batsman is batting.")
 
-batsman.play()  # this will
-print "the batsman is batting."
-bowler.play()   # this will
-print "the bowler is bowling."
+
+class Bowler(player):
+       def play(self):
+           print("The bowler is bowling.")
+         
+
+batsman = Batsman()
+bowler = Bowler()
+
+
+batsman.play()
+bowler.play()
